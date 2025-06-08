@@ -194,7 +194,7 @@ export default function NewClientSchedulePage() {
               value={selectedClientId}
               onChange={e => setSelectedClientId(e.target.value)}
             >
-              <option value="">-- Не выбран --</option>
+              <option value="">Не выбран</option>
               {clients.map(c => (
                 <option key={c.id} value={c.id}>
                   {c.fullName} ({c.age} лет)
@@ -307,7 +307,7 @@ export default function NewClientSchedulePage() {
               value={selectedTeacher}
               onChange={e => setSelectedTeacher(e.target.value)}
             >
-              <option value="">-- выберите --</option>
+              <option value="">Не выбран</option>
               {teachers.map(t => (
                 <option key={t.id} value={t.id}>
                   {t.fullName} ({t.email})
