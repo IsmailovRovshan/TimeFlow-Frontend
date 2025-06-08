@@ -31,7 +31,6 @@ export default function CreateSubjectPage() {
       setErrorMessage("Не удалось загрузить список предметов");
     }
   };
-
   
   const handleCreate = async e => {
     e.preventDefault();
